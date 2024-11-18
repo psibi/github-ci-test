@@ -35,6 +35,6 @@ jobs:
       if: ${{ matrix.os == 'macos-latest' }}
       run: |
         echo var dir check
-        ls /var
+        ls -lah /var
         echo private dir check
-        ls /private
+        ls -lah /private
