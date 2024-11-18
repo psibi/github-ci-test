@@ -31,3 +31,10 @@ jobs:
     - uses: taiki-e/install-action@just
     - name: Test
       run: just pwd
+    - name: More test
+      if: ${{ matrix.os == 'macos-latest' }}
+      run: |
+        echo var dir check
+        ls /var
+        echo private dir check
+        ls /private
