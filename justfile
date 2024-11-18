@@ -5,3 +5,4 @@ default:
 # pwd
 pwd:
 	pwd
+	ls /
