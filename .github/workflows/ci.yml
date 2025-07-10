@@ -28,9 +28,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: taiki-e/install-action@v2
+    - uses: psibi/install-action@c72791d
       with:
-        tool: just@1.40.0,agave@2.2.19
+        tool: agave@2.2.18,just
     - name: Test
       run: just pwd
     - name: More test
