@@ -33,6 +33,11 @@ jobs:
         tool: agave@2.2.18,just
     - name: Test
       run: just pwd
+    - name: Test agave
+      run: |
+        solana --version
+        cargo-build-sbf --version
+        cargo-test-sbf --version
     - name: More test
       if: ${{ matrix.os == 'macos-latest' }}
       run: |
