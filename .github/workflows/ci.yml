@@ -28,7 +28,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: psibi/install-action@c72791d
+    - uses: psibi/install-action@c72791d81af61349f8c1870780d45f7348ee1871
       with:
         tool: agave@2.2.18,just
     - name: Test
